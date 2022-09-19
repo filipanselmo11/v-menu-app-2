@@ -36,16 +36,16 @@
     <br />
 
     <v-main>
-      <main-menu></main-menu>
+      <menu-component></menu-component>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import MainMenu from './components/MainMenu.vue';
+import MenuComponent from './components/MenuComponent.vue';
 export default {
   name: "App",
-  components: { MainMenu },
+  components: { MenuComponent },
   data: () => ({
     //
   }),
