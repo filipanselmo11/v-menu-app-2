@@ -33,22 +33,19 @@
       </v-btn>
     </v-app-bar>
 
-    <br/>
+    <br />
 
     <v-main>
-      <v-menu-component></v-menu-component>
+      <main-menu></main-menu>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import VMenuComponent from "./components/VMenuComponent.vue"
-
+import MainMenu from './components/MainMenu.vue';
 export default {
   name: "App",
-
-  components: {VMenuComponent},
-
+  components: { MainMenu },
   data: () => ({
     //
   }),

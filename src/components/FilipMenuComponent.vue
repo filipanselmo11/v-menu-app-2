@@ -56,8 +56,10 @@
 </template>
 
 <script>
+import FilipMenuComponent from './FilipMenuComponent.vue';
 export default {
   name: "FilipMenuComponent",
+  components: { FilipMenuComponent },
   props: {
     name: String,
     icon: String,
