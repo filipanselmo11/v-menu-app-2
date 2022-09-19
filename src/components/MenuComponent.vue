@@ -6,8 +6,8 @@
           <v-btn primary dark v-on="on" v-bind="attrs"> Dropdown </v-btn>
         </template>
         <v-list dense>
-          <v-list-item v-for="i in 4" :key="i">
-            <v-list-item-title>{{ i }}</v-list-item-title>
+          <v-list-item v-for="(item, index) in items" :key="index">
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
 
           <v-menu offset-x open-on-hover>
@@ -33,7 +33,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    items: [
+      { title: "Editar Desenho" },
+      { title: "Atribuir Evento" },
+      { title: "Atribuir Categoria" },
+    ],
+  }),
+};
 </script>
 
 <style>
