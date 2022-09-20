@@ -44,10 +44,12 @@ export default {
   }),
   methods: {
     show(e) {
-      e.preventDefault();
+      e.preventDefault;
       this.showMenu = false;
       this.x = e.clientX;
       this.y = e.clientY;
+      console.log(this.x);
+      console.log(this.y);
       this.$nextTick(() => {
         this.showMenu = true;
       });
