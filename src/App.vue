@@ -36,16 +36,17 @@
     <br />
 
     <v-main>
-      <menu-component></menu-component>
+      <absolute-menu></absolute-menu>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import MenuComponent from './components/MenuComponent.vue';
+import AbsoluteMenu from './components/AbsoluteMenu.vue';
+// import MenuComponent from './components/MenuComponent.vue';
 export default {
   name: "App",
-  components: { MenuComponent },
+  components: { AbsoluteMenu },
   data: () => ({
     //
   }),
