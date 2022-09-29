@@ -36,22 +36,26 @@
     <br />
 
     <v-main>
-      <menu-final></menu-final>
+      <!-- <menu-final></menu-final> -->
       <!-- <menu-absolute></menu-absolute> -->
       <!-- <menu-1></menu-1> -->
+      <container-menu></container-menu>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import MenuFinal from './components/MenuFinal.vue';
+// import MenuFinal from './components/MenuFinal.vue';
 // import AbsoluteMenu from './components/AbsoluteMenu.vue';
 // import Menu1 from './components/Menu1.vue';
 // import MenuAbsolute from './components/MenuAbsolute.vue';
+
+import ContainerMenu from "./components/ContainerMenu.vue"
+
 // import MenuComponent from './components/MenuComponent.vue';
 export default {
+  components: { ContainerMenu },
   name: "App",
-  components: { MenuFinal },
   data: () => ({
     //
   }),
