@@ -39,7 +39,8 @@
       <!-- <menu-final></menu-final> -->
       <!-- <menu-absolute></menu-absolute> -->
       <!-- <menu-1></menu-1> -->
-      <container-menu></container-menu>
+      <!-- <container-menu></container-menu> -->
+      <html-menu></html-menu>
     </v-main>
   </v-app>
 </template>
@@ -50,11 +51,12 @@
 // import Menu1 from './components/Menu1.vue';
 // import MenuAbsolute from './components/MenuAbsolute.vue';
 
-import ContainerMenu from "./components/ContainerMenu.vue"
+// import ContainerMenu from "./components/ContainerMenu.vue"
+import HtmlMenu from './components/HtmlMenu.vue';
 
 // import MenuComponent from './components/MenuComponent.vue';
 export default {
-  components: { ContainerMenu },
+  components: { HtmlMenu },
   name: "App",
   data: () => ({
     //
