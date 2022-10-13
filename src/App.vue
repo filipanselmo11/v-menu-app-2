@@ -41,7 +41,8 @@
       <!-- <menu-1></menu-1> -->
       <!-- <container-menu></container-menu> -->
       <!-- <html-menu></html-menu> -->
-      <novo-menu-component></novo-menu-component>
+      <!-- <novo-menu-component></novo-menu-component> -->
+      <my-list></my-list>
     </v-main>
   </v-app>
 </template>
@@ -54,11 +55,12 @@
 
 // import ContainerMenu from "./components/ContainerMenu.vue"
 // import HtmlMenu from './components/HtmlMenu.vue';
-import NovoMenuComponent from './components/NovoMenuComponent.vue';
+// import NovoMenuComponent from './components/NovoMenuComponent.vue';
 
 // import MenuComponent from './components/MenuComponent.vue';
+import MyList from './components/MyList.vue';
 export default {
-  components: { NovoMenuComponent },
+  components: { MyList },
   name: "App",
   data: () => ({
     //
